@@ -21,6 +21,10 @@
 		B0E7D55118D58220006DD162 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E7D53318D5821F006DD162 /* UIKit.framework */; };
 		B0E7D55918D58220006DD162 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B0E7D55718D58220006DD162 /* InfoPlist.strings */; };
 		B0E7D55B18D58220006DD162 /* Overdue_Task_List_Assignment_SolutionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E7D55A18D58220006DD162 /* Overdue_Task_List_Assignment_SolutionTests.m */; };
+		B0E7D56718D58256006DD162 /* XDTask.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E7D56618D58256006DD162 /* XDTask.m */; };
+		B0E7D56B18D5827E006DD162 /* XDAddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E7D56A18D5827E006DD162 /* XDAddTaskViewController.m */; };
+		B0E7D56E18D582A0006DD162 /* XDDetailTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E7D56D18D582A0006DD162 /* XDDetailTaskViewController.m */; };
+		B0E7D57118D582AC006DD162 /* XDEditTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E7D57018D582AC006DD162 /* XDEditTaskViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		B0E7D55618D58220006DD162 /* Overdue Task List Assignment SolutionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Overdue Task List Assignment SolutionTests-Info.plist"; sourceTree = "<group>"; };
 		B0E7D55818D58220006DD162 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B0E7D55A18D58220006DD162 /* Overdue_Task_List_Assignment_SolutionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Overdue_Task_List_Assignment_SolutionTests.m; sourceTree = "<group>"; };
+		B0E7D56518D58256006DD162 /* XDTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDTask.h; sourceTree = "<group>"; };
+		B0E7D56618D58256006DD162 /* XDTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDTask.m; sourceTree = "<group>"; };
+		B0E7D56918D5827E006DD162 /* XDAddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDAddTaskViewController.h; sourceTree = "<group>"; };
+		B0E7D56A18D5827E006DD162 /* XDAddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDAddTaskViewController.m; sourceTree = "<group>"; };
+		B0E7D56C18D582A0006DD162 /* XDDetailTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDDetailTaskViewController.h; sourceTree = "<group>"; };
+		B0E7D56D18D582A0006DD162 /* XDDetailTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDDetailTaskViewController.m; sourceTree = "<group>"; };
+		B0E7D56F18D582AC006DD162 /* XDEditTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDEditTaskViewController.h; sourceTree = "<group>"; };
+		B0E7D57018D582AC006DD162 /* XDEditTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDEditTaskViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +124,11 @@
 		B0E7D53518D5821F006DD162 /* Overdue Task List Assignment Solution */ = {
 			isa = PBXGroup;
 			children = (
+				B0E7D56818D5825D006DD162 /* ViewControllers */,
+				B0E7D56418D58243006DD162 /* Models */,
 				B0E7D53E18D5821F006DD162 /* XDAppDelegate.h */,
 				B0E7D53F18D5821F006DD162 /* XDAppDelegate.m */,
 				B0E7D54118D5821F006DD162 /* Main.storyboard */,
-				B0E7D54418D5821F006DD162 /* XDViewController.h */,
-				B0E7D54518D5821F006DD162 /* XDViewController.m */,
 				B0E7D54718D5821F006DD162 /* Images.xcassets */,
 				B0E7D53618D5821F006DD162 /* Supporting Files */,
 			);
@@ -150,6 +162,30 @@
 				B0E7D55718D58220006DD162 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0E7D56418D58243006DD162 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B0E7D56518D58256006DD162 /* XDTask.h */,
+				B0E7D56618D58256006DD162 /* XDTask.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B0E7D56818D5825D006DD162 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B0E7D54418D5821F006DD162 /* XDViewController.h */,
+				B0E7D54518D5821F006DD162 /* XDViewController.m */,
+				B0E7D56918D5827E006DD162 /* XDAddTaskViewController.h */,
+				B0E7D56A18D5827E006DD162 /* XDAddTaskViewController.m */,
+				B0E7D56C18D582A0006DD162 /* XDDetailTaskViewController.h */,
+				B0E7D56D18D582A0006DD162 /* XDDetailTaskViewController.m */,
+				B0E7D56F18D582AC006DD162 /* XDEditTaskViewController.h */,
+				B0E7D57018D582AC006DD162 /* XDEditTaskViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,8 +286,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0E7D57118D582AC006DD162 /* XDEditTaskViewController.m in Sources */,
+				B0E7D56E18D582A0006DD162 /* XDDetailTaskViewController.m in Sources */,
 				B0E7D54018D5821F006DD162 /* XDAppDelegate.m in Sources */,
 				B0E7D53C18D5821F006DD162 /* main.m in Sources */,
+				B0E7D56B18D5827E006DD162 /* XDAddTaskViewController.m in Sources */,
+				B0E7D56718D58256006DD162 /* XDTask.m in Sources */,
 				B0E7D54618D5821F006DD162 /* XDViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
